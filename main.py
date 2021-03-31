@@ -12,7 +12,19 @@ matches = list()
 
 #Create weekly peer matches
 while len(matches) < len(lst)//2:
-    match = random.choice(comb)
+    
     matches.append(match)
     comb.remove(match)
     print(len(comb))
+
+print(matches)
+
+#Create a match
+
+#Create New Combinations Minus the Match
+
+#
+
+while len(lst) > 0:
+    comb = list(combinations(lst, 2))
+    match = random.choice(comb)
